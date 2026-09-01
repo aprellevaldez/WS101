@@ -21,6 +21,6 @@ if (isset($_GET['total'])) {
     echo "Final Price: ₱" .number_format($finalPrice, 2);
 } else {
     echo "Please provide a cart total in the URL.<br>";
-    echo "Example: activity2.php?total=150";
+    echo "Example: act2_ecommerceDiscount.php?total=150";
 }
 ?>
