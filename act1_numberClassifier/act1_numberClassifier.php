@@ -6,20 +6,22 @@ if (isset($_GET['num'])) {
     echo "Input Number: $num<br><br>";
 
     if ($num > 0) {
-        echo "The number is Positive<br>";
-
-        if ($num % 2 == 0) {
-            echo "It is Even.";
-        } else {
-            echo "It is Odd.";
-        }
+        echo "The number is positive<br>";
     } elseif ($num < 0) {
-        echo "The number is Negative";
+        echo "The number is negative<br>";
     } else {
-        echo "The number is Zero";
+        echo "The number is zero";
+    }
+
+    if($num != 0){
+        if ($num % 2 == 0) {
+            echo "The number is even.";
+        } else {
+            echo "The number is odd.";
+        }
     }
 } else {
     echo "Please provide a number in the URL.<br>";
-    echo "Example: activity1.php?num=10";
+    echo "Example: act1_numberClassifier.php?num=10";
 }
 ?>
